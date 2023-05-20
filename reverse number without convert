@@ -1,0 +1,19 @@
+// // 1. Write a JavaScript function that reverses a number. Go to the editor
+// // Example x = 32243;
+// // Expected Output : 34223
+
+function reverseNumber(INP){
+    var reverse = 0;
+    var reminder = 0;
+    while (INP != 0){
+      reminder = INP % 10;
+      reverse = reverse * 10 + reminder;
+      INP = Math.floor(INP / 10);
+  
+    }
+    return reverse;
+     
+  }
+  const number = prompt("Enter number to reverse :");
+  const reversed = reverseNumber(number);
+  console.log(reversed); 
