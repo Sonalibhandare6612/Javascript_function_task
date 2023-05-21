@@ -1,0 +1,21 @@
+// 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string. Go to the editor
+// Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+// Example string : 'The quick brown fox'
+// Expected Output : 5
+function countVowel(A){
+    var count = 0;
+  for (let i = 0; i < A.length; i++){
+    var INP = A[i].toLowerCase();
+    if (INP == 'a' || 
+        INP == 'e' || 
+        INP == 'i' ||
+        INP == 'o' ||
+        INP == 'u' ) {
+      count = count + 1;
+    }
+  }
+  return count;
+  }
+  var inputString = prompt("Enter String :");
+  var B = countVowel(inputString);
+  console.log(B)
