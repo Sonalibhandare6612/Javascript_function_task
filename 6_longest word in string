@@ -1,0 +1,17 @@
+// 6. Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string. Go to the editor
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+function longStr(Str) {
+    var Arr = [];
+    let thisStr = Str.split(' ');
+    for (let i = 0; i < thisStr.length; i++) {
+      let inpStr = i.length;
+      Arr.push(inpStr);
+    }
+    let cArr = Arr.sort();
+    return cArr[-1];
+  }
+  
+  var A = prompt("Enter String :");
+  var B = longStr('Web', 'Development', 'Tutorial');
+  console.log(B);
