@@ -1,0 +1,9 @@
+// 9. Write a JavaScript function that accepts an argument and returns the type. Go to the editor
+// Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
+function dataType(INP){
+  var A = typeof INP;
+  console.log(A);
+}
+var B = dataType("swapnali");
+var C = dataType(12);
+var D = dataType(null);
