@@ -1,0 +1,21 @@
+// 13. Write a JavaScript function to compute the factors of a positive integer.
+function factorsOfnumber(INP){
+  const Arr = [];
+  for (let i = 0; i <= INP; i++){
+    if (INP % i === 0){
+      Arr.push(i);
+    }
+  }
+  return Arr;
+}
+while(true){
+  var A = parseInt(prompt("Enter Number : "));
+  if (A > 0){
+    var B = factorsOfnumber(A);
+    console.log(B);
+    break;
+  }
+  else{
+  console.log("Please Enter Number greater than 1.");
+  }
+}
