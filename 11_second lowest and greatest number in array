@@ -1,0 +1,24 @@
+
+// 11. Write a JavaScript function that takes an array of numbers and finds the second lowest and second greatest numbers, respectively.
+// Sample array : [1,2,3,4,5]
+// Expected Output : 2,4
+function returnNumber(INP){
+  var Arr = [];
+  for (let i = 0; i < INP; i++){
+    var userInput = parseInt(prompt("Enter Number :"));
+    Arr.push(userInput);
+  }
+  const sArr = Arr.sort();
+  var secondLowest = sArr[1];
+  var secondGreatest = sArr[sArr.length - 2];
+  return [secondLowest, secondGreatest];
+
+}
+var A = parseInt(prompt("Enter quantity of elements to add in array :"));
+if (A >= 4){
+  var B = returnNumber(A);
+  console.log(B);
+}
+else{
+  console.log("please enter more than 4 elements.")
+}
