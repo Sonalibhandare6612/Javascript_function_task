@@ -1,0 +1,65 @@
+// 14. Write a JavaScript function to convert an amount into coins.
+// Sample function : amountTocoins(46, [25, 10, 5, 2, 1])
+// Here 46 is the amount. and 25, 10, 5, 2, 1 are coins.
+// Output : 25, 10, 10, 1
+function amountTocoins(INP){
+  const Arr = [];
+  while (INP > 0){
+    switch (true) {
+    case INP >= 2000 :
+      Arr.push(2000);
+      INP = INP - 2000;
+      break;
+    case INP >= 1000 :
+      Arr.push(1000);
+      INP = INP - 1000;
+      break;
+    case INP >= 500 : 
+      Arr.push(500);
+      INP = INP - 500;
+      break;
+    case INP >= 200 : 
+      Arr.push(200);
+      INP = INP - 200;
+      break;
+    case INP >= 100 : 
+      Arr.push(100);
+      INP = INP - 100;
+      break;
+    case INP >= 50 : 
+      Arr.push(50);
+      INP = INP - 50;
+      break;  
+    case INP >= 20 : 
+      Arr.push(20);
+      INP = INP - 20;
+      break;    
+    case INP >= 10 : 
+      Arr.push(10);
+      INP = INP - 10;
+      break;    
+    case INP >= 5 : 
+      Arr.push(5);
+      INP = INP - 5;
+      break;
+    case INP >= 2 :
+      Arr.push(2);
+      INP = INP - 2;
+      break;
+    case INP >= 1 :
+      Arr.push(1);
+      INP = INP - 1;
+      break;        
+  
+
+    }
+  }
+  return Arr;
+
+}
+
+var userInput = parseInt(prompt("Enter Amount less than 3500 to convert into coins :"));
+var A = amountTocoins(userInput);
+console.log(A);
+
+
