@@ -1,0 +1,21 @@
+// 17. Write a JavaScript function to get the number of occurrences of each letter in a specified string.
+function letterCount(Str){
+  var count = 0;
+  var inpLetter = prompt("Enter letter to find occurances:");
+  for (let i = 0; i < Str.length; i++){
+    if (Str[i] === inpLetter){
+      count += 1;
+    }
+  }
+  return count;
+
+}
+var A = prompt("Enter String :");
+var B = letterCount(A)
+if (B === 0){
+  console.log("This letter is not present in given string.")
+}
+else{
+  console.log("This letter is present in string" + " " + B +" "+"times.")
+}
+
