@@ -1,0 +1,21 @@
+
+// 19. Write a JavaScript function that returns array elements larger than a number.
+function greaterNumber(fArr){
+  const gArr = [];
+  var D = parseInt(prompt("Enter Number to compare :"));
+  for (let j = 0; j < fArr.length;j++){
+    if (fArr[j] > D){
+      gArr.push(fArr[j]);
+    }
+  }
+  return gArr;
+}
+var A = parseInt(prompt("Enter how many elements you want to add in array :"));
+const Arr = [];
+for (let i = 0; i < A; i++){
+  var B = parseInt(prompt("Enter array element :"));
+  Arr.push(B);
+}
+var C = greaterNumber(Arr);
+console.log(C);
+
