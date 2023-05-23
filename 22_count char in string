@@ -1,0 +1,17 @@
+// 22. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.
+// Sample arguments : 'w3resource.com', 'o'
+// Expected output : 2
+function countChar(Str,Chr){
+  var count = 0;
+  for (let i = 0; i <Str.length;i++){
+    if (Str[i] === Chr){
+      count += 1;
+    }
+  }
+  return count;
+
+}
+var A = prompt("Enter string :");
+var B = prompt("Enter character to find within string:");
+var C = countChar(A,B);
+console.log(C);
