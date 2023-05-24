@@ -1,0 +1,18 @@
+// 23. Write a JavaScript function to find the first not repeated character.
+// Sample arguments : 'abacddbec'  
+// Expected output : 'e'
+//#######
+function noRepeatchar(Str){
+  var Chr = "";
+  for (let i = 0; i<Str.length;i++){
+    if(!Str.includes(Str[i])){
+      Chr = Str[i]
+      break;
+    }
+  }
+  return Chr
+}
+var A = prompt("Enter String:");
+var B = noRepeatchar(A);
+console.log(B);
+
