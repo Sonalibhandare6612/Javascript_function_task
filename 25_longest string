@@ -1,0 +1,28 @@
+// 25. Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output.
+// Sample function : Longest_Country_Name(["Australia", "Germany", "United States of America"])
+// Expected output : "United States of America"
+function longestStr(Num){
+  const Arr = [];
+  var longStr = '';
+  var count = 0;
+  for (let i = 0; i < Num;i++){
+    var inp = prompt("Enter String :");
+    Arr.push(inp);
+  }
+  for (let j = 0; j <Num; j++){
+    if (Arr[j].length > count){
+      count = Arr[j].length;
+      longStr = Arr[j];
+    }
+  }
+  return longStr;
+  
+}
+var A = parseInt(prompt("Enter how many strings to compare:"));
+if (A === Number){
+  var B = longestStr(A);
+console.log("longest string is"+ " " + B);
+}
+else {
+  console.log("Please enter number value.")
+}
