@@ -1,0 +1,16 @@
+
+// 15. Write a JavaScript function to compute the value of bn where n is the exponent and b is the base. Accept b and n from the user and display the results.
+function exponentNum(B, n){
+  var ans = 1;
+  for (let i = 1; i <= n; i++){
+      ans = B * ans;
+  }
+
+  return ans;
+
+}
+
+var a = parseInt(prompt("Enter base value :"));
+var b = parseInt(prompt("Enter exponent value :"));
+var c = exponentNum(a,b);
+console.log(c)
