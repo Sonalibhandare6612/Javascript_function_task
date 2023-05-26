@@ -1,0 +1,11 @@
+ //Q2. multiplication using callback.
+
+//   function squareNum(ans, thisCallback){
+//     thisCallback(ans);
+//   }
+//   function thisFunction(num){
+//     var ans = num * num;
+//     console.log(ans);
+//   }
+//   var A = parseInt(prompt("Enter number :"));
+//   squareNum(A,thisFunction);
