@@ -1,0 +1,12 @@
+//Q3 print name function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name + "how are you?");
+    callback();
+}
+
+function callFunction() {
+    console.log('I am callback function');
+}
+
+var A = prompt("Enter Name :")
+greet(A, callFunction);
