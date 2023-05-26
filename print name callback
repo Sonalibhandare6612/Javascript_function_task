@@ -10,3 +10,16 @@ function callFunction() {
 
 var A = prompt("Enter Name :")
 greet(A, callFunction);
+
+// 28. Write a JavaScript program to pass a 'JavaScript function' as a parameter.
+function data(myCallback){
+  myCallback();
+}
+
+function javaScript_function(){
+  console.log("this is java function.");
+}
+
+data(javaScript_function);
+
+
