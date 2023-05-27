@@ -1,0 +1,18 @@
+function displayOddAndEvenElements(arr, callback) {
+  arr.forEach((element) => {
+    callback(element);
+  });
+}
+
+function displayElement(element) {
+  if (element % 2 === 0) {
+    console.log(element + " is even.");
+  } else {
+    console.log(element + " is odd.");
+  }
+}
+
+// Example usage
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+displayOddAndEvenElements(numbers, displayElement);
