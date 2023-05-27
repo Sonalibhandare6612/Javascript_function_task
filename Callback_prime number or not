@@ -1,0 +1,25 @@
+function isPrime(number, callback) {
+  // Check if the number is less than 2
+  if (number < 2) {
+    callback(number + ' is not a prime number');
+    return;
+  }
+
+  // Check if the number is divisible by any number less than itself
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      callback(number + ' is not a prime number');
+      return;
+    }
+  }
+
+  // The number is prime
+  callback(number + ' is a prime number');
+}
+
+// Example usage of the isPrime function with a callback
+const numberToCheck = 17;
+
+isPrime(numberToCheck, function(result) {
+  console.log(result);
+});
